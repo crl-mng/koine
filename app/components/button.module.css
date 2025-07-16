@@ -1,0 +1,36 @@
+
+.button {
+  color: var(--black);
+  background-color: var(--light-gray);
+  border: none;
+  padding: 0.5rem 1.25rem;
+  border-radius: 2rem;
+  z-index: 999;
+  transition: 0.1s;
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-weight: 600;
+  font-size: var(--small);
+}
+
+.button:hover {
+  background-color: var(--black);
+  color: var(--light-gray);
+}
+
+.button.secondary {
+  color: var(--light-gray);
+  background-color: transparent;
+  border: 1px solid var(--light-gray);
+}
+
+.button.secondary:hover {
+  color: var(--light-gray);
+  background-color: var(--black);
+  border: 1px solid var(--black);
+}
+
+
+@media (max-width: 768px) {
+
+
+}

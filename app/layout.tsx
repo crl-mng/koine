@@ -2,6 +2,8 @@
 import "@/app/globals.css";
 import type { Metadata } from "next";
 import { SanityLive } from "./lib/live";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,9 +17,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="it" suppressHydrationWarning>
+      <head>
+        <link rel="stylesheet" href="https://use.typekit.net/hcw1xut.css" />
+      </head>
       <body>
+        <Header />
         {children}
-          <SanityLive />
+        <Footer />
+        <SanityLive />
       </body>
     </html>
   );
